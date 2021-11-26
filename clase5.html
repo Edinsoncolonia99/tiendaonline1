@@ -64,33 +64,24 @@
             margin-bottom: 4px;
 
         }
-        .input {
-            background-color: var(--text-input-field);
-            border: none;
-            border-radius: 8px;
-            height: 30px;
+    
+        .value {
+            color: var(--very-light-pink);
             font-size: var(--md);
-            padding: 6px;
-            margin-bottom: 12px;
+            margin: 8px 0 32px 0;
         }
-
-        .input-correo,
-        .input-nombre,
-        .input-passwword {
-            margin-bottom: 22px;
-        }
-
-        .primary-button {
-            background-color: var(--hospital-green);
+        .secondary-button {
+            background-color: var(--white);
             border-radius: 8px;
-            border: none;
-            color: var(--white);
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
             width: 100%;
             cursor: pointer;
             font-size: var(--md);
             font-weight: bold;
             height: 30px;
         } 
+
         .login-button {
             margin-top: 14px;
             margin-bottom: 30px;
@@ -116,27 +107,18 @@
        
             <div>
                 <label for="nombre" class="label">Nombre</label>
-                <input type="text" 
-                id="nombre" 
-                placeholder="nombre" 
-                class="input input-nombre">
+                <p class="value">Edinson Colonia</p>
 
-                <label for="correo" class="label">Correo electrónico</label>
-                <input type="text" 
-                id="correo" 
-                placeholder="correo@dominio.com" 
-                class="input input-correo">
+                <label for="correo" class="label">Correo</label>
+                <p class="value">edinsoncolonia@gmail.com</p>
 
                 <label for="password" class="label">Contraseña</label>
-                <input type="password" 
-                id="password" 
-                placeholder="********" 
-                class="input input-password">
+                <p class="value">***********</p>
             </div>
 
                 <input type="submit" 
-                value="crear" 
-                class="primary-button login-button">
+                value="Editar" 
+                class="secondary-button login-button">
             </form>
     </div>
 </body>
